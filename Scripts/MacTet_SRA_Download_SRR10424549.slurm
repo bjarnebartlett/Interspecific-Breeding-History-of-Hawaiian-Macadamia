@@ -13,9 +13,10 @@
 #SBATCH --mail-type ALL # this specifies what events you should get an email about ALL will alert you of jobbeginning,completion, failure etc
 module load bio/SRA-Toolkit/2.9.6-centos_linux64
 module load bio/FastQC/0.11.8-Java-1.8.0_191
-prefetch SRR10424549 -p -v -O /home/bjarne/kantar_lts/bjarne/
-vdb-validate /home/bjarne/kantar_lts/bjarne/SRR10424549.sra > /home/bjarne/kantar_lts/bjarne/SRR10424549.vdbvalidate.txt
-mkdir /home/bjarne/kantar_lts/bjarne/temp/
-fasterq-dump /home/bjarne/kantar_lts/bjarne/SRR10424549.sra -e 4 -O /home/bjarne/kantar_lts/bjarne/ -t /home/bjarne/kantar_lts/bjarne/temp/
-tar -zxf /home/bjarne/kantar_lts/bjarne/*.fastq.gz
-fastqc /home/bjarne/nfs_fs02/*.fastq
+# prefetch SRR10424549 -p -v -O /home/bjarne/kantar_lts/bjarne/
+# vdb-validate /home/bjarne/kantar_lts/bjarne/SRR10424549.sra > /home/bjarne/kantar_lts/bjarne/SRR10424549.vdbvalidate.txt
+# mkdir /home/bjarne/kantar_lts/bjarne/temp/
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/013/358/625/GCF_013358625.1_SCU_Mint_v3/ -P /home/bjarne/kantar_lts/bjarne
+# fasterq-dump SRR10424549 -e 4 -O /home/bjarne/kantar_lts/bjarne/ -t /home/bjarne/kantar_lts/bjarne/temp/
+# tar -zxf /home/bjarne/kantar_lts/bjarne/*.fastq.gz
+fastqc /home/bjarne/kantar_lts/bjarne/*.fastq.gz

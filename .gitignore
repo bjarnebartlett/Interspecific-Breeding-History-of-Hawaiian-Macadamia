@@ -1,6 +1,9 @@
 # Data Directory
 /data/
 
+# slurm files
+.slurm
+
 # History files
 .Rhistory
 .Rapp.history

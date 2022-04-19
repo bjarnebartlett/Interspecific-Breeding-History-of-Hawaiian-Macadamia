@@ -1,5 +1,5 @@
 # Data Directory
-#/data/
+/data/
 
 # History files
 .Rhistory

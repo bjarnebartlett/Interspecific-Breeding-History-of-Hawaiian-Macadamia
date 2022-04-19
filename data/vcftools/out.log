@@ -1,0 +1,25 @@
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /Users/bjarne/MTall_var.vcf
+	--maf 0.4
+	--maxDP 70
+	--max-meanDP 70
+	--minDP 30
+	--min-meanDP 30
+	--minQ 30
+	--max-missing 0.49
+	--recode
+	--remove-indels
+	--stdout
+
+Using zlib version: 1.2.11
+Warning: Expected at least 2 parts in INFO entry: ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+Warning: Expected at least 2 parts in INFO entry: ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+After filtering, kept 4 out of 4 Individuals
+Outputting VCF file...
+After filtering, kept 1786 out of a possible 1061901 Sites
+Run Time = 3.00 seconds

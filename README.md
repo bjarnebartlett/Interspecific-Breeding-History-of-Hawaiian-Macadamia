@@ -233,4 +233,4 @@ Project Link: [https://github.com/bjarnebartlett/Interspecific-Breeding-History-
 [license-url]: https://github.com/bjarnebartlett/Interspecific-Breeding-History-of-Hawaiian-Macadamia/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/bjarnebartlett
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/poster.png

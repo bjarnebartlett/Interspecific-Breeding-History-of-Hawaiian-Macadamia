@@ -33,11 +33,11 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Revealing the Interspecific Breeding History of Hawaiian Macadamia through Transcriptome Sequencing and Analysis </h3>
 
   <p align="center">
-    project_description
-    <br />
+    Macadamia is an important agricultural crop in Hawai’i, utilizing significant resources in production. Aging orchards, changing climate, and increased pest pressure threaten the Macadamia industry in Hawaii. Genomic knowledge of crop wild relatives (CWR) will be central to determining the possible role of breeding to mitigate these challenges.
+<br />
     <a href="https://github.com/bjarnebartlett/Interspecific-Breeding-History-of-Hawaiian-Macadamia"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -84,7 +84,13 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Macadamia tetraphylla is a crop wild relative of the economically valuable crop Macadamia integrifolia.
+We aimed to create a new genomic resource for macadamia agriculture in Hawai’i through generating a new transcriptomics dataset for M. tetraphylla.
+
+A transcriptome assembly of M. tetraphylla was constructed from existing public data along with new RNA-sequencing data generated from wild collected feral M. tetraphylla and putative hybrid breeding lines in Hawai’i. Next-generation sequencing data (PRJNA587821) was obtained for M. tetraphylla and assembled.
+
+CWR genes are used to improve crops in various ways. CWR genes are valued at $115-$120 billion toward increased crop yields per year. Macadamia are diploid (2n = 28) with genome size estimates ranging from 652 Mb to 780 Mb. Because our data are Illumina, transcriptome, and short reads (~150bp), Trinity has the best performance out of available de novo assembly programs.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -194,9 +200,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/bjarnebartlett) - bjarne@hawaii.edu
+Your Name - [@bjarnebartlett](https://twitter.com/bjarnebartlett) - bjarne@hawaii.edu
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/bjarnebartlett/Interspecific-Breeding-History-of-Hawaiian-Macadamia)
+Project Link: [https://github.com/bjarnebartlett/Interspecific-Breeding-History-of-Hawaiian-Macadamia](https://github.com/bjarnebartlett/Interspecific-Breeding-History-of-Hawaiian-Macadamia)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

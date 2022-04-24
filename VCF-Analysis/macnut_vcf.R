@@ -1,13 +1,15 @@
 # load tidyverse package
 library(tidyverse)
 
-var_qual <- read_delim("~/vcftools/MTall_subset.lqual", delim = "\t",
+# Set working directory load tidyverse package
+
+var_qual <- read_delim("~/Documents/GitHub/Interspecific-Breeding-History-of-Hawaiian-Macadamia/data/vcftools/MTall_subset.lqual", delim = "\t",
                        col_names = c("chr", "pos", "qual"), skip = 1)
 
 a <- ggplot(var_qual, aes(qual)) + geom_density(fill = "dodgerblue1", colour = "black", alpha = 0.3)
 a + theme_light()
 
-var_depth <- read_delim("~/vcftools/MTall_subset.ldepth.mean", delim = "\t",
+var_depth <- read_delim("~/Documents/GitHub/Interspecific-Breeding-History-of-Hawaiian-Macadamia/data/vcftools/MTall_subset.ldepth.mean", delim = "\t",
                         col_names = c("chr", "pos", "mean_depth", "var_depth"), skip = 1)
 
 a <- ggplot(var_depth, aes(mean_depth)) + geom_density(fill = "dodgerblue1", colour = "black", alpha = 0.3)
@@ -17,7 +19,7 @@ summary(var_depth$mean_depth)
 
 a + theme_light() + xlim(0, 100)
 
-var_miss <- read_delim("~/vcftools/MTall_subset.lmiss", delim = "\t",
+var_miss <- read_delim("~/Documents/GitHub/Interspecific-Breeding-History-of-Hawaiian-Macadamia/data/vcftools/MTall_subset.lmiss", delim = "\t",
                        col_names = c("chr", "pos", "nchr", "nfiltered", "nmiss", "fmiss"), skip = 1)
 
 a <- ggplot(var_miss, aes(fmiss)) + geom_density(fill = "dodgerblue1", colour = "black", alpha = 0.3)
@@ -25,7 +27,7 @@ a + theme_light()
 
 summary(var_miss$fmiss)
 
-var_freq <- read_delim("~/vcftools/MTall_subset.frq", delim = "\t",
+var_freq <- read_delim("~/Documents/GitHub/Interspecific-Breeding-History-of-Hawaiian-Macadamia/data/vcftools/MTall_subset.frq", delim = "\t",
                        col_names = c("chr", "pos", "nalleles", "nchr", "a1", "a2"), skip = 1)
 
 # find minor allele frequency
@@ -36,19 +38,19 @@ a + theme_light()
 
 summary(var_freq$maf)
 
-ind_depth <- read_delim("~/vcftools/MTall_subset.idepth", delim = "\t",
+ind_depth <- read_delim("~/Documents/GitHub/Interspecific-Breeding-History-of-Hawaiian-Macadamia/data/vcftools/MTall_subset.idepth", delim = "\t",
                         col_names = c("ind", "nsites", "depth"), skip = 1)
 
 a <- ggplot(ind_depth, aes(depth)) + geom_histogram(fill = "dodgerblue1", colour = "black", alpha = 0.3)
 a + theme_light()
 
-ind_miss  <- read_delim("~/vcftools/MTall_subset.imiss", delim = "\t",
+ind_miss  <- read_delim("~/Documents/GitHub/Interspecific-Breeding-History-of-Hawaiian-Macadamia/data/vcftools/MTall_subset.imiss", delim = "\t",
                         col_names = c("ind", "ndata", "nfiltered", "nmiss", "fmiss"), skip = 1)
 
 a <- ggplot(ind_miss, aes(fmiss)) + geom_histogram(fill = "dodgerblue1", colour = "black", alpha = 0.3)
 a + theme_light()
 
-ind_het <- read_delim("~/vcftools/MTall_subset.het", delim = "\t",
+ind_het <- read_delim("~/Documents/GitHub/Interspecific-Breeding-History-of-Hawaiian-Macadamia/data/vcftools/MTall_subset.het", delim = "\t",
                       col_names = c("ind","ho", "he", "nsites", "f"), skip = 1)
 
 a <- ggplot(ind_het, aes(f)) + geom_histogram(fill = "dodgerblue1", colour = "black", alpha = 0.3)
